@@ -1,0 +1,396 @@
+Last login: Mon Jan 23 20:15:06 on ttys000
+Xuejiao-iMac:~ xuejiao_dutton$ ls
+Applications	Documents	Library		Pictures	Sites
+Desktop		Downloads	Movies		Public		[Destination]
+Destination	For Mingming	Music		PycharmProjects	new_project
+Xuejiao-iMac:~ xuejiao_dutton$ cd Desktop
+Xuejiao-iMac:Desktop xuejiao_dutton$ ls
+Atom.app					Mingming Creative Activities
+Carrion Crown					MySQLWorkbench.app
+DojoAssignments					Programs
+For Linkin Profile				PyCharm CE.app
+Fun Coding					Screen Shot 2017-01-23 at 07.30.40 PM.png
+Google Chrome.app				Table
+I love HTML					Terminal.app
+IP Camera Tool.app				Test
+Indentation Sample				Wolf.jpg
+MAMP.app
+Xuejiao-iMac:Desktop xuejiao_dutton$ cd Test
+Xuejiao-iMac:Test xuejiao_dutton$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.aboutMe.txt.swp
+	aboutMe.txt
+	index.html
+	styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+Xuejiao-iMac:Test xuejiao_dutton$ git commit -m "added excerpt and bio"
+On branch master
+
+Initial commit
+
+Untracked files:
+	.aboutMe.txt.swp
+	aboutMe.txt
+	index.html
+	styles.css
+
+nothing added to commit but untracked files present
+Xuejiao-iMac:Test xuejiao_dutton$ git init
+Reinitialized existing Git repository in /Users/xuejiao_dutton/Desktop/Test/.git/
+Xuejiao-iMac:Test xuejiao_dutton$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.aboutMe.txt.swp
+	aboutMe.txt
+	index.html
+	styles.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+Xuejiao-iMac:Test xuejiao_dutton$ git log
+fatal: your current branch 'master' does not have any commits yet
+Xuejiao-iMac:Test xuejiao_dutton$ git commit -m "added excerpt and bio"
+On branch master
+
+Initial commit
+
+Untracked files:
+	.aboutMe.txt.swp
+	aboutMe.txt
+	index.html
+	styles.css
+
+nothing added to commit but untracked files present
+Xuejiao-iMac:Test xuejiao_dutton$ git add
+Nothing specified, nothing added.
+Maybe you wanted to say 'git add .'?
+Xuejiao-iMac:Test xuejiao_dutton$ git add aboutMe.txt
+Xuejiao-iMac:Test xuejiao_dutton$ git add index.html
+Xuejiao-iMac:Test xuejiao_dutton$ git add styles.css
+Xuejiao-iMac:Test xuejiao_dutton$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   aboutMe.txt
+	new file:   index.html
+	new file:   styles.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.aboutMe.txt.swp
+
+Xuejiao-iMac:Test xuejiao_dutton$ git commit -m "added files aboutMe.txt, indext.html and styles.css"
+[master (root-commit) 7777b47] added files aboutMe.txt, indext.html and styles.css
+ 3 files changed, 12 insertions(+)
+ create mode 100644 aboutMe.txt
+ create mode 100644 index.html
+ create mode 100644 styles.css
+Xuejiao-iMac:Test xuejiao_dutton$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   aboutMe.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.aboutMe.txt.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Xuejiao-iMac:Test xuejiao_dutton$ git commit -m "added bio"
+On branch master
+Changes not staged for commit:
+	modified:   aboutMe.txt
+
+Untracked files:
+	.aboutMe.txt.swp
+
+no changes added to commit
+Xuejiao-iMac:Test xuejiao_dutton$ git log
+commit 7777b47754234206120632c6bf00e8a3aa53abd2
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:41:32 2017 -0800
+
+    added files aboutMe.txt, indext.html and styles.css
+Xuejiao-iMac:Test xuejiao_dutton$ git add aboutMe.txt
+Xuejiao-iMac:Test xuejiao_dutton$ git status
+On branch master
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   aboutMe.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.aboutMe.txt.swp
+
+Xuejiao-iMac:Test xuejiao_dutton$ git commit -m "added bio"
+[master 258b346] added bio
+ 1 file changed, 5 insertions(+), 12 deletions(-)
+ rewrite aboutMe.txt (77%)
+Xuejiao-iMac:Test xuejiao_dutton$ git log
+commit 258b346f30c2cbe29c4976f4bca156ace6f75594
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:43:55 2017 -0800
+
+    added bio
+
+commit 7777b47754234206120632c6bf00e8a3aa53abd2
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:41:32 2017 -0800
+
+    added files aboutMe.txt, indext.html and styles.css
+Xuejiao-iMac:Test xuejiao_dutton$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	modified:   aboutMe.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.aboutMe.txt.swp
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Xuejiao-iMac:Test xuejiao_dutton$ git add aboutMe.txt
+Xuejiao-iMac:Test xuejiao_dutton$ git commit -m "added favorite movie"
+[master 9f9b542] added favorite movie
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+Xuejiao-iMac:Test xuejiao_dutton$ git log
+commit 9f9b54225b24ddd416b47be26167730872446a48
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:45:34 2017 -0800
+
+    added favorite movie
+
+commit 258b346f30c2cbe29c4976f4bca156ace6f75594
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:43:55 2017 -0800
+
+    added bio
+
+commit 7777b47754234206120632c6bf00e8a3aa53abd2
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:41:32 2017 -0800
+
+    added files aboutMe.txt, indext.html and styles.css
+Xuejiao-iMac:Test xuejiao_dutton$ git revert -n 9f9b542
+Xuejiao-iMac:Test xuejiao_dutton$ git log
+commit 9f9b54225b24ddd416b47be26167730872446a48
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:45:34 2017 -0800
+
+    added favorite movie
+
+commit 258b346f30c2cbe29c4976f4bca156ace6f75594
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:43:55 2017 -0800
+
+    added bio
+
+commit 7777b47754234206120632c6bf00e8a3aa53abd2
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:41:32 2017 -0800
+
+    added files aboutMe.txt, indext.html and styles.css
+Xuejiao-iMac:Test xuejiao_dutton$ git revert -n HEAD
+Xuejiao-iMac:Test xuejiao_dutton$ git revert -n 9f9b54225b24ddd416b47be26167730872446a48
+Xuejiao-iMac:Test xuejiao_dutton$ git log
+commit 9f9b54225b24ddd416b47be26167730872446a48
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:45:34 2017 -0800
+
+    added favorite movie
+
+commit 258b346f30c2cbe29c4976f4bca156ace6f75594
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:43:55 2017 -0800
+
+    added bio
+
+commit 7777b47754234206120632c6bf00e8a3aa53abd2
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:41:32 2017 -0800
+
+    added files aboutMe.txt, indext.html and styles.css
+Xuejiao-iMac:Test xuejiao_dutton$ git statuys
+git: 'statuys' is not a git command. See 'git --help'.
+
+Did you mean this?
+	status
+Xuejiao-iMac:Test xuejiao_dutton$ git status
+On branch master
+You are currently reverting commit 9f9b542.
+  (all conflicts fixed: run "git revert --continue")
+  (use "git revert --abort" to cancel the revert operation)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	modified:   aboutMe.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	.aboutMe.txt.swp
+
+Xuejiao-iMac:Test xuejiao_dutton$ git commit -m "revert HEAD"
+[master 6f2c0f9] revert HEAD
+ 1 file changed, 1 insertion(+), 3 deletions(-)
+Xuejiao-iMac:Test xuejiao_dutton$ git log
+commit 6f2c0f960977044b62424b92872387c41e9b44ef
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:50:58 2017 -0800
+
+    revert HEAD
+
+commit 9f9b54225b24ddd416b47be26167730872446a48
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:45:34 2017 -0800
+
+    added favorite movie
+
+commit 258b346f30c2cbe29c4976f4bca156ace6f75594
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:43:55 2017 -0800
+
+    added bio
+
+commit 7777b47754234206120632c6bf00e8a3aa53abd2
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 20:41:32 2017 -0800
+
+    added files aboutMe.txt, indext.html and styles.css
+Xuejiao-iMac:Test xuejiao_dutton$ clear
+
+Xuejiao-iMac:Test xuejiao_dutton$ ls
+aboutMe.txt	index.html	styles.css
+Xuejiao-iMac:Test xuejiao_dutton$ cd ..
+Xuejiao-iMac:Desktop xuejiao_dutton$ ls
+Atom.app					MAMP.app
+Carrion Crown					Mingming Creative Activities
+DojoAssignments					MySQLWorkbench.app
+For Linkin Profile				Programs
+Fun Coding					PyCharm CE.app
+Google Chrome.app				Screen Shot 2017-01-23 at 07.30.40 PM.png
+I love HTML					Table
+IP Camera Tool.app				Terminal.app
+Indentation Sample				Test
+Learning to Commit.txt				Wolf.jpg
+Xuejiao-iMac:Desktop xuejiao_dutton$ cd DojoAssignments
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ git status
+fatal: Not a git repository (or any of the parent directories): .git
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ git init
+Initialized empty Git repository in /Users/xuejiao_dutton/Desktop/DojoAssignments/.git/
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ git status
+On branch master
+
+Initial commit
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	MEAN/
+	Python/
+	Ruby/
+	WebFundamentals/
+	assignments.txt
+	iOS/
+	netCore/
+
+nothing added to commit but untracked files present (use "git add" to track)
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ git add .
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ git status
+On branch master
+
+Initial commit
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+
+	new file:   MEAN/about.txt
+	new file:   Python/about.txt
+	new file:   Ruby/about.txt
+	new file:   WebFundamentals/CSS/about.txt
+	new file:   WebFundamentals/Git/about.txt
+	new file:   WebFundamentals/HTML/Bad Wolf's Blog.html
+	new file:   WebFundamentals/HTML/Hello World.html
+	new file:   WebFundamentals/HTML/Registration Form.html
+	new file:   WebFundamentals/HTML/about.txt
+	new file:   WebFundamentals/HTML/indentation.html
+	new file:   WebFundamentals/Javascript/about.txt
+	new file:   WebFundamentals/about.txt
+	new file:   assignments.txt
+	new file:   iOS/about.txt
+	new file:   netCore/about.txt
+
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ git commit -m "added all my folders and files"
+[master (root-commit) 322fd7f] added all my folders and files
+ 15 files changed, 209 insertions(+)
+ create mode 100644 MEAN/about.txt
+ create mode 100644 Python/about.txt
+ create mode 100644 Ruby/about.txt
+ create mode 100644 WebFundamentals/CSS/about.txt
+ create mode 100644 WebFundamentals/Git/about.txt
+ create mode 100644 WebFundamentals/HTML/Bad Wolf's Blog.html
+ create mode 100644 WebFundamentals/HTML/Hello World.html
+ create mode 100644 WebFundamentals/HTML/Registration Form.html
+ create mode 100644 WebFundamentals/HTML/about.txt
+ create mode 100644 WebFundamentals/HTML/indentation.html
+ create mode 100644 WebFundamentals/Javascript/about.txt
+ create mode 100644 WebFundamentals/about.txt
+ create mode 100644 assignments.txt
+ create mode 100644 iOS/about.txt
+ create mode 100644 netCore/about.txt
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ git log
+commit 322fd7f5d167491edf4ef3203553f0070b99d3dd
+Author: Christianmichael Dutton <christianmichael_dutton@yahoo.com>
+Date:   Mon Jan 23 21:10:12 2017 -0800
+
+    added all my folders and files
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ git status
+On branch master
+nothing to commit, working tree clean
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ echo "# DojoAssignments" >> README.md
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ git init
+Reinitialized existing Git repository in /Users/xuejiao_dutton/Desktop/DojoAssignments/.git/
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ git add README.md
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ git commit -m "first commit"
+[master 00881cf] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ git remote add origin https://github.com/ChristianmichaelDutton/DojoAssignments.git
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ git push -u origin master
+Username for 'https://github.com': ChristianmichaelDutton
+Password for 'https://ChristianmichaelDutton@github.com': 
+Counting objects: 13, done.
+Delta compression using up to 4 threads.
+Compressing objects: 100% (10/10), done.
+Writing objects: 100% (13/13), 3.12 KiB | 0 bytes/s, done.
+Total 13 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), done.
+To https://github.com/ChristianmichaelDutton/DojoAssignments.git
+ * [new branch]      master -> master
+Branch master set up to track remote branch master from origin.
+Xuejiao-iMac:DojoAssignments xuejiao_dutton$ 
