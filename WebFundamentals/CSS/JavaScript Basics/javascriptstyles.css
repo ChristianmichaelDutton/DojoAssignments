@@ -1,0 +1,84 @@
+/*CSS reset settings here*/
+#base{
+ width: 970px;
+ height: 970px;
+ background-color: #22288b;
+ margin: 0px auto;
+ padding-top: 15px;
+}
+#header{
+ width: 915px;
+ height: 85px;
+ background-color: #8C001A;
+ margin-left: 10px;
+ margin-right: 10px;
+ margin-top:20px;
+ margin-bottom:20px;
+ border-radius: 30px;
+ padding: 15px;
+}
+#body{
+ width: 950px;
+ height: 640px;
+ margin-left: 10px;
+ margin-right: 10px;
+ margin-top:0px;
+ margin-bottom:20px;
+}
+#footer{
+ width: 945px;
+ height: 70px;
+ background-color: grey;
+ margin-left: 10px;
+ margin-right: 10px;
+ margin-top:20px;
+ margin-bottom:20px;
+ border-radius: 30px;
+ padding-top: 20px;
+ vertical-align: bottom;
+}
+#navigation{
+ width: 250px;
+ height: 320px;
+ background-color:  #177b80;
+ margin-left: 10px;
+ margin-right: 10px;
+ margin-top:0px;
+ margin-bottom:20px;
+ border-radius: 30px;
+ display: inline-block;
+ vertical-align: top;
+}
+#description{
+ width: 620px;
+ height: 640px;
+ background-color: black;
+ margin-left: 30px;
+ margin-right: 0px;
+ margin-top:0px;
+ margin-bottom:20px;
+ border-radius: 30px;
+ display: inline-block;
+ padding-left: 20px;
+}
+#header h1{
+font-size: 250%;
+color: #bfd4d6;
+text-indent: 20px;
+}
+#header p{
+  text-indent: 20px;
+}
+#navigation p, #navigation ul{
+    color: #bfd4d6;
+}
+#description h2,#description p,#description ul{
+  color:  #678789;
+}
+#description p, #description ul{
+  font-size: 97%;
+}
+#footer p{
+  text-indent: 30px;
+  color:  #bfd4d6;
+}

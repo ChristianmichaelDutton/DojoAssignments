@@ -1,0 +1,82 @@
+/*CSS reset settings here*/
+#base{
+ width: 1060px;
+ height: 1060px;
+ background-color: beige;
+ margin: 0px auto;
+ padding-top: 50px;
+}
+#header{
+ height: 150px;
+ width: 1020px;
+ margin: 20px;
+}
+#blocks{
+height: 815px;
+width: 1020px;
+margin-top: 40px;
+margin-left:20px;
+margin-right:10px;
+}
+.row1,.row2,.row3,.row4 {
+  height: 205px;
+  width:1020px;
+  display: block;
+}
+.firstblockrow1,.thirdblockrow1,.fifthblockrow1,.firstblockrow2,.thirdblockrow2,
+.fifthblockrow2,.firstblockrow3,.thirdblockrow3,.fifthblockrow3,.firstblockrow4,
+.thirdblockrow4,.fifthblockrow4{
+  height:174px;
+  width: 174px;
+  background-color: #40b6e1;
+  border: 3px solid black;
+  margin: 0px auto;
+  padding: 10px;
+  display: inline-block;
+}
+.secondblockrow1,.fourthblockrow1,.secondblockrow2,.fourthblockrow2,.secondblockrow3,
+.fourthblockrow3,.secondblockrow4,.fourthblockrow4{
+  height:174px;
+  width: 174px;
+  background-color: red;
+  border: 3px solid black;
+  margin: 0 auto;
+  padding: 10px;
+  display: inline-block;
+}
+.box1{
+  height:148px;
+  width: 196px;
+  margin-left:150px;
+  display: inline;
+  margin-right: 1px;
+}
+.box1{
+  float:left
+}
+.box2{
+  height:148px;
+  width: 316px;
+  display: inline-block;
+  margin-left: 1px;
+  margin-right: 1px;
+  text-align: center;
+}
+.caption{
+  margin-top:110px;
+  vertical-align: text-bottom;
+}
+.box3{
+  height:148px;
+  width: 196px;
+  background-color: white;
+  margin-right:150px;
+  display: inline;
+  margin-left: 1px;
+}
+.box3{
+  float:right
+}
+h1{
+  font-size: 225%
+}

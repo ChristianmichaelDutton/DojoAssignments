@@ -1,0 +1,172 @@
+.header{
+  display: block;
+  height: 100px;
+  width: 100%;
+  background: linear-gradient(#F0F2EF,#FFFFFF);
+}
+.headerimage{
+  display:inline-block;
+  vertical-align: top;
+  width:300px;
+  height:100px;
+  margin-right: 200px;
+}
+.headertext{
+  display:inline-block;
+  vertical-align: top;
+  width:500px;
+  height:50px;
+  margin-left: 200px;
+  padding-top: 50px;
+  padding-right:20px;
+  text-align: right;
+}
+.headertext h2{
+  text-align: right;
+  display:inline;
+}
+.search{
+  display: block;
+  border:1px solid black;
+  width: 100%;
+  height: 40px;
+  background: linear-gradient(#F0F2EF,#FFFFFF,#F0F2EF);
+}
+.search table{
+  width:90%;
+  height:40px;
+  border-collapse: collapse;
+}
+table, th{
+  border:1px solid black;
+}
+.info{
+  display: block;
+  width:100%;
+  height:15px;
+  text-align: right;
+  margin:0px;
+}
+.image{
+  display:inline-block;
+  width:40px;
+  height:15px;
+  padding-bottom: 10px;
+}
+.text{
+  display:inline-block;
+  width:200px;
+  height:15px;
+  padding-right:20px;
+  margin-bottom: 30px;
+}
+.text p{
+  text-align: right;
+  color:#546887;
+  display:inline;
+  padding-bottom: 10px;
+}
+.main{
+  display: block;
+  width: 100%;
+  height: 700px;
+  background: linear-gradient(#1D0D12,#715A63,#1D0D12);
+}
+.main-content{
+  display: block;
+  width: 100%;
+  height: 290px;
+  text-align: left;
+}
+.main-content img{
+  border: 10px solid silver;
+  margin-left:22px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+.main-content div{
+  display: inline-block;
+  width: 43%;
+  height: 250px;
+  margin-top:20px;
+  background: linear-gradient(to right,#F1FCFE, #DCCCD9);
+  vertical-align: top;
+}
+.main-boxes{
+  display: block;
+  width: 100%;
+  height: 400px;
+  margin-top:5px;
+  text-align: center;
+  vertical-align: top;
+  display: inline-block;
+}
+.main-boxes div{
+  display: inline-block;
+  width: 24%;
+  height: 380px;
+  vertical-align: top;
+  background: linear-gradient(#FEFEFE,#99AAC1,#FEFEFE);
+}
+.main-boxes p{
+  text-align: left;
+  font-size: 80%;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  padding-bottom:0px;
+}
+.main-boxes h2{
+  text-align: left;
+}
+.main-boxes div img{
+  width: 100%;
+}
+.main-content h2{
+  background: linear-gradient(silver, grey, silver);
+  vertical-align: top;
+  margin:0px;
+  padding-left: 10px;
+}
+.main-content p, .main-content h3{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.main-content div{
+  vertical-align: top;
+}
+.main-boxes div h2{
+  width: 100%;
+  margin:0px auto;
+  background: linear-gradient(silver, grey, silver);
+}
+.main-boxes div button{
+  background-color: #587399;
+  border: 3px solid black;
+  border-radius: 5px;
+  box-shadow: 0px 5px 3px grey;
+}
+.button1{
+  vertical-align: bottom;
+  position: relative;
+  top: 50px;
+  right:-80px;
+}
+.button2{
+  vertical-align: bottom;
+  position: relative;
+  top: 20px;
+  right:-80px;
+}
+.button3{
+  vertical-align: bottom;
+  position: relative;
+  top: 35px;
+  right:-80px;
+}
+.button4{
+  vertical-align: bottom;
+  position: relative;
+  top: 50px;
+  right:-80px;
+}
