@@ -1,0 +1,17 @@
+var x = 42;
+var a = 8;
+var b = 19;
+var c = 17;
+var dark = "In darkness, they come.";
+var light = "the light repels them.";
+var path = "Stand in the light, lest the darkness overtake you.";
+var iron = false;
+var gold = true;
+var chemical_x;
+console.log(x,a,b,c);
+console.log("My warning to you is, '" + dark + "'");
+console.log("Take comfort in that " + light);
+console.log("Understand this, '" + path + "'");
+console.log("Is iron more valuable than gold? " + iron);
+console.log("Is it true that gold is valuable? " + gold);
+console.log("What is Chemical X? " + chemical_x);
