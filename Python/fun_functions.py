@@ -54,9 +54,11 @@ print b
 
 """Hacker Challenge"""
 def array(x,y):
-    a = x*y
+    a = []
     for i in x:
-        print x[i]
-        """print i*y"""
+        a.append(i*y)
+    for i in range(len(a)):
+        a[i]=[1]*a[i]
+    print a
 array([2,4,5],3)
 
