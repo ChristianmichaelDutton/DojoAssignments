@@ -1,0 +1,17 @@
+.wrapper{
+  border: 3px solid black;
+  background: linear-gradient(#009AC7,#FB3C6F);
+  height: 400px;
+  width: 400px;
+  text-align: right;
+}
+ul {
+  list-style-type: none;
+  position: relative;
+  margin-right: 75px;
+}
+
+p, textarea, button{
+  position: relative;
+  margin-right: 75px;
+}

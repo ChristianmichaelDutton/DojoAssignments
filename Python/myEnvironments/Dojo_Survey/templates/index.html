@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <meta charset="utf-8">
+        <title>Survey Page</title>
+        <link rel="stylesheet" href="stylesheet.css">
+  </head>
+  <body>
+    <div class ="wrapper">
+        <form>
+          <table>
+            <ul>
+              <li>
+                <label for="first_name">Name:</label>
+                <input type="text" id="name" name="name">
+              </li>
+              <li>
+                <label for="Dojo Location">Dojo Location</label>
+                    <select name="Dojo Location">
+                        <option value="Seattle">Seattle</option>
+                        <option value="San Francisco">San Francisco</option>
+                        <option value="San Jose">San Jose</option>
+                    </select>
+              </li>
+              <li>
+                  <label for="Favorite Language">Favorite Language</label>
+                  <select name="Favorite Language">
+                        <option value="javascript">Javascript</option>
+                        <option value="python">Python</option>
+                        <option value="French">French</option>
+                  </select>
+              </li>
+            </ul>
+          </table>
+            <p>A short description of yourself:</p>
+            <textarea name="description"></textarea>
+            <input type="submit" value="Submit!">
+        </form>
+      </div>
+  </body>
+</html>
