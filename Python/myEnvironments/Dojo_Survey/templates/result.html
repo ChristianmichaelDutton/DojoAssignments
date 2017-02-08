@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
-    <title>Result Page</title>
+        <meta charset="utf-8">
+        <title>Survey Page</title>
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet.css') }}">
   </head>
   <body>
-
+    <div class ="wrapper">
+        <form class="form" action="/result" method="post">
+          <table>
+            <ul>
+              <li
+                <label for="name">Name:</label>
+                <p>{{ name }}</p>
+              </li>
+              <li>
+                <label for="location">Location:</label>
+                <p>{{ location }}</p>
+              </li>
+              <li>
+                <label for="language">Language:</label>
+                <p>{{ language }}</p>
+              </li>
+              <li>
+                <label for="text">Comments:</label>
+                <p>{{ text }}</p>
+              </li>
+            </ul>
+          </table>
+        </form>
+      </div>
   </body>
 </html>

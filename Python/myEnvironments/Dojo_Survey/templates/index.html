@@ -3,11 +3,11 @@
   <head>
         <meta charset="utf-8">
         <title>Survey Page</title>
-        <link rel="stylesheet" href="stylesheet.css">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylesheet.css') }}">
   </head>
   <body>
     <div class ="wrapper">
-        <form>
+        <form action='/result' method='post'>
           <table>
             <ul>
               <li>
@@ -16,7 +16,7 @@
               </li>
               <li>
                 <label for="Dojo Location">Dojo Location</label>
-                    <select name="Dojo Location">
+                    <select name="location">
                         <option value="Seattle">Seattle</option>
                         <option value="San Francisco">San Francisco</option>
                         <option value="San Jose">San Jose</option>
@@ -24,7 +24,7 @@
               </li>
               <li>
                   <label for="Favorite Language">Favorite Language</label>
-                  <select name="Favorite Language">
+                  <select name="language">
                         <option value="javascript">Javascript</option>
                         <option value="python">Python</option>
                         <option value="French">French</option>
@@ -33,7 +33,7 @@
             </ul>
           </table>
             <p>A short description of yourself:</p>
-            <textarea name="description"></textarea>
+            <textarea name="text"></textarea>
             <input type="submit" value="Submit!">
         </form>
       </div>
