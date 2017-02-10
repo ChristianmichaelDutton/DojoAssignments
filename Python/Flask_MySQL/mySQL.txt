@@ -1,0 +1,4 @@
+1. Turned on MAMP and checked the Preferences to get the mySQL port # which is 8889.
+2. Turned on the MAMP servers and activated a connection in mySQL.
+3. Called my connection Pathfinder Dragons and plugged in the correct port number.
+4. It connected me to the workbench in which I’m able to open up the twitter.sql file and copy and paste to begin my work.
