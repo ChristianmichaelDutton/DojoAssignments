@@ -1,0 +1,21 @@
+body{
+  height:100%;
+  width:95%;
+  padding:10px;
+}
+h1{
+  color:blue;
+}
+button{
+  background-color: blue;
+  color:white;
+  border-radius: 10px;
+  border: 3px solid red;
+  box-shadow: 3px 3px 3px red;
+}
+p.green{
+  color: green;
+}
+p.red{
+  color: red;
+}

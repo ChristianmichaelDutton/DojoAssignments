@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Counting Game</title>
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
   </head>
   <body>
         <div class="wrapper">
@@ -12,9 +12,18 @@
                   <h2>Ahri must guess the number the dragon has in its head or she'll be eaten!</h2>
                   <h2>Help her live by entering a number from 1 to 100!</h2>
                   <form class="guess" action="/guess" method="post">
-                        <input type="text" name="guess" value="Number">
-                        <input type="submit" name="submit" value="Save Ahri!">
+                        <input type="text" name="number">
+                        <input class="ahri" type="submit" name="submit" value="Save Ahri!">
                   </form>
+                  <div class="answer">
+                      {% if session['number'] > session['dragon'] %}
+                        <h2 class="too_high">That's too high! The dragon is opening his jaws and drooling!</h2>
+                      {% elif session['number'] < session['dragon'] %}
+                        <h2 class="too_low">That's too low! The dragon is licking his jaws in hungry anticipation!</h2>
+                      {% else %}
+                        <h2 class="congrats">Congratulations! You saved Ahri!</h2>
+                      {% endif %}
+                  </div>
               </div>
         </div>
   </body>

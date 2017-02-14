@@ -46,4 +46,38 @@ input{
   color: black;
   display: block;
   text-align: center;
+  margin:auto;
+  margin-top: 15px;
+  border-radius: 10px;
+}
+input.ahri{
+  height: 50px;
+  width: 200px;
+  position:relative;
+  top: 180px;
+  border-radius: 15px;
+  box-shadow: 5px 5px 5px blue;
+}
+h2.too_high, h2.too_low,h2.congrats{
+  color:white;
+}
+div.answer{
+  height: 175px;
+  width: 200px;
+  border: 4px solid black;
+  background-color: red;
+  border-radius: 15px;
+  position:relative;
+  bottom: 64px;
+  left: 270px;
+}
+div.winner{
+  height: 175px;
+  width: 200px;
+  border: 4px solid black;
+  background-color: green;
+  border-radius: 15px;
+  position:relative;
+  bottom: 64px;
+  left: 270px;
 }

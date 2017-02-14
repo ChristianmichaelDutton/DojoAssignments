@@ -1,0 +1,21 @@
+body.game{
+  height: 100%;
+  width: 100%;
+  background-image: url('knight.jpg');
+  background-repeat: no-repeat;
+}
+
+.wrapper{
+  height: 95%;
+  width: 95;
+  margin:auto;
+  padding: 20px;
+  background-color: grey;
+  opacity: .65;
+  display:inline-block;
+}
+img{
+  height:99%;
+  width: 99%;
+  display:inline-block;
+}
