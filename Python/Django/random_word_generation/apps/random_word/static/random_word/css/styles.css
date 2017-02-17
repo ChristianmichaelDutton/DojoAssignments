@@ -1,0 +1,26 @@
+h1{
+  color:blue;
+}
+h2{
+  text-align: center;
+}
+div.boxer{
+  height:100px;
+  width: 500px;
+  text-align: center;
+  font-size: 40px;
+  padding: 15px;
+  border: 5px solid black;
+  box-shadow: 5px 5px 5px grey;
+  display: block;
+  margin: auto;
+}
+input{
+  display: block;
+  margin: auto;
+  background-color: #0095FF;
+  color: black;
+  height: 40px;
+  width: 200px;
+  box-shadow: 10px 10px 10px silver;
+}
