@@ -14,12 +14,13 @@
 </head>
   <body>
     <div class ="wrapper">
+        <h3>Thanks for submitting this form! You have submitted this form {{request.session.count}} times now!</h3>
         <form class="form" action="/result" method="post">
           <table>
             <ul>
               <li
                 <label for="name">Name:</label>
-                <p>{{request.session.name }}</p>
+                <p>{{request.session.name}}</p>
               </li>
               <li>
                 <label for="location">Location:</label>
