@@ -1,0 +1,24 @@
+h1{
+  color: blue;
+  margin-left: 50px;
+}
+label{
+  margin-left: 50px;
+}
+input.btn-primary{
+  margin-left: 50px;
+}
+input.snagglepuffs{
+  margin-left: 50px;
+  width: 400px;
+}
+div.invalid{
+  height:auto;
+  width: 300px;
+  background-color: red;
+  text-align: center;
+  color: white;
+  border: 3px solid black;
+  border-radius: 15px;
+  margin-left: 50px;
+}
