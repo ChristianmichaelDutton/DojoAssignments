@@ -22,4 +22,6 @@ def survey(request):
     else:
         return redirect('/')
 
+
+
 # Create your views here.

@@ -1,0 +1,59 @@
+input.fn {
+  margin-left: 100px;
+  width: 150px;
+}
+input.ln {
+  margin-left: 100px;
+  width: 150px;
+}
+input.em {
+  margin-left: 135px;
+  width: 150px;
+}
+input.pw {
+  margin-left: 105px;
+  width: 150px;
+}
+input.cnpw {
+  margin-left: 90px;
+  width: 150px;
+}
+input.reg {
+  width: 100px;
+  margin-left: 270px;
+  background-color: blue;
+  color:white;
+  border: 3px solid black;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 10px;
+}
+input.log {
+  width: 100px;
+  margin-left: 270px;
+  background-color: red;
+  color:white;
+  border: 3px solid black;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 10px;
+}
+input.logout{
+  width: 100px;
+  margin-left: 100px;
+  background-color: yellow;
+  color:black;
+  border: 3px solid black;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 10px;
+}
+input.try{
+  width: 100px;
+  margin-left: 100px;
+  background-color: green;
+  color:black;
+  border: 3px solid black;
+  box-shadow: 3px 3px 3px grey;
+  border-radius: 10px;
+}
+h1{
+  margin-left: 50px;
+}
