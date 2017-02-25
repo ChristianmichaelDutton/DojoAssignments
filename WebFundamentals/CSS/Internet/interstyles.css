@@ -1,0 +1,216 @@
+*{
+  font-family: "Arial",sans-serif,serif;
+}
+
+.header{
+  height: 150px;
+  width: 1925px;
+  display: block;
+}
+.header img{
+  margin-left: 30px;
+}
+.header img, .header p{
+  display: inline;
+  vertical-align: bottom;
+}
+.header p{
+  font-size: 350%;
+  position:relative;
+  bottom:20px;
+}
+.header span{
+  color:#02699c;
+}
+.webbar{
+  height:125px;
+  width:1925px;
+  display: block;
+  background: linear-gradient(#096B96,#4885AA,#096B96);
+}
+.webbar p{
+  margin:0px;
+  margin-left: 60px;
+  font-size: 300%;
+  color:white;
+  position:relative;
+  top:35px;
+}
+.main{
+  height:1325px;
+  width:1925px;
+  display:block;
+  background: linear-gradient(#E3e3e3,white);
+}
+.navbar{
+  text-align: left;
+  height:1325px;
+  width:400px;
+  display:inline-block;
+  vertical-align: top;
+}
+.navbar h3, .navbar p{
+  font-weight: bold;
+}
+.navbar span.span1{
+  color:red;
+}
+.navbar span.span2, .navbar span.span3{
+  color:#1473A2;
+}
+.body{
+  text-align: left;
+  height:1325px;
+  width:1390px;
+  margin-left: 110px;
+  display: inline-block;
+  vertical-align: top;
+}
+.navbar button{
+    height: 50px;
+    width: 380px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    border-radius: 15px;
+    border: none;
+    box-shadow: 0px 10px 5px silver;
+    color: white;
+    padding: 10px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: block;
+    font-size: 32px;
+}
+.navbar button.watch{
+  background-color: #3d87b2;
+}
+.navbar button.more{
+  background-color: #f49239;
+  margin-bottom: 50px;
+}
+.navbar div.ad{
+  background-image: url("ad.png");
+  height: 600px;
+  width: 400px;
+}
+.navbar p.career{
+  font-size: 200%;
+  color: white;
+  text-align: center;
+  position: relative;
+  top: 10%;
+  display: block;
+}
+.navbar img{
+  display: block;
+  position: relative;
+  margin-left: 100px;
+  top: 10%;
+}
+img.reqandres{
+  height: 200px;
+  width: 500px;
+  display: block;
+  position: relative;
+  margin-left: 400px;
+}
+.navbar button.learn{
+  background-color: #00C9DE;
+  display: block;
+  position: relative;
+  top: 25%;
+}
+hr {
+    display: block;
+    width: 380px;
+    margin-top: 0.5em;
+    margin-bottom: 50px;
+    margin-left: 10px
+    margin-right: 10px;
+    border-color: silver;
+    border-width: 4px;
+}
+.body p.hrsofop{
+  display: block;
+  text-align: right;
+  margin-right: 35px;
+  font-size: 12px;
+  position:relative;
+  top:35px;
+}
+.body img.home, .body h3.dns, .body img.phone,
+.body h1.phone{
+  display: inline;
+}
+.body img.home{
+  position:relative;
+  margin: 0px;
+  vertical-align: top;
+}
+.body h3.dns{
+  position:relative;
+  font-size: 35px;
+  bottom: 59px;
+}
+.body img.phone{
+  position:relative;
+  left: 810px;
+}
+.body h1.phone{
+  position:relative;
+  color: #00C2DD;
+  font-size: 310%;
+  left: 820px;
+  bottom: 40px;
+}
+.body p.international{
+  position: relative;
+  left: 1120px;
+  bottom:50px;
+}
+.body hr.client {
+    display: block;
+    position: relative;
+    width: 1250px;
+    margin-top: 0.5em;
+    margin-bottom: 50px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-color: silver;
+    border-width: 4px;
+}
+h1.clients {
+  color: #1473A2;
+}
+h1.happens {
+  color: #1473A2;
+}
+span.span4{
+  color: #1473A2;
+}
+.bottomborder{
+  display: block;
+  height: 200px;
+  border-top: 10px solid #1473A2;
+  border-left: 10px solid #1473A2;
+  border-right: 10px solid #1473A2;
+}
+img.relationship{
+  display:inline-block;
+  height: 200px;
+  width: 200px;
+}
+h1.thebig {
+  vertical-align: top;
+  margin-left: 20px;
+  display: inline-block;
+  position: relative;
+  color: #1473A2;
+}
+p.p{
+  vertical-align: top;
+  margin-left: 240px;
+  display: inline-block;
+  position: relative;
+  bottom: 150px;
+}

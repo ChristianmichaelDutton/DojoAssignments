@@ -58,7 +58,7 @@ input.ahri{
   border-radius: 15px;
   box-shadow: 5px 5px 5px blue;
 }
-h2.too_high, h2.too_low,h2.congrats{
+h2.too_high, h2.too_low, h2.congrats{
   color:white;
 }
 div.answer{

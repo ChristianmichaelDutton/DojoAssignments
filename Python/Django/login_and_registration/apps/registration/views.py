@@ -52,5 +52,6 @@ def success(request):
         return render(request, 'registration/success.html', {"user":user})
 
 def logout(request):
+    print request.method
     if request.method =='POST':
         return redirect('/')

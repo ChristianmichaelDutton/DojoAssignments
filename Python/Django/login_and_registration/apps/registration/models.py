@@ -1,5 +1,6 @@
 from __future__ import unicode_literals
 from django.db import models
+from django.shortcuts import render, redirect
 import bcrypt
 import re
 from validate_email import validate_email
@@ -28,8 +29,7 @@ class UserManager(models.Manager):# work in the  actual validation
                 errors.append("password match")
                 return False,errors
             if len(errors) == 0:
-                hashed = bcrypt.hashpw(request.POST['password'], bcrypt.gensalt()).encode()
-                user=self.objects.create(first_name=request.POST['first_name'],last_name=request.POST['last_name'],email=request.POST['email'],password=bcrypt.hashpw(postData["password"].encode(), bcrypt.gensalt()))
+                user=User.objects.create(first_name=postData['first_name'],last_name=postData['last_name'],email=postData['email'],password=postData['password'])
                 return True, user
 
     def login_verification(self, postData):
@@ -48,4 +48,5 @@ class User(models.Model):
       password = models.CharField(max_length=100)
       created_at = models.DateTimeField(auto_now_add = True)
       updated_at = models.DateTimeField(auto_now = True)
+
       objects = UserManager()
