@@ -1,6 +1,14 @@
-$(document).ready(function (){
-  $("img").hover(function (){
-    $(this).html($("<p> HOVERING!!!!! </p>"));
-  },function (){
-    $(this).html($(""));
+$(document).ready(function(){
+  // $('.square').hide();
+  $( 'img' ).hover(function(){
+    $('.square').show()
+  };function(){
+    $('.square').hide();
   });
+
+
+
+
+
+
+});

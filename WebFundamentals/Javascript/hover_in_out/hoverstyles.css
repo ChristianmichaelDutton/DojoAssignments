@@ -8,8 +8,35 @@ img {
   box-shadow: 3px 3px 3px grey;
 
 }
-
 p.attack{
-  display: none;
-  color: white;
+  color: black;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+}
+.square{
+  vertical-align: bottom;
+  width: 310px;
+  height: 150px;
+  background: silver;
+  opacity: .75;
+  display: inline-block;
+  position: relative;
+  bottom: 500px;
+  margin-left: 10px;
+  border-radius: 10px;
+  margin-right: 8px;
+}
+.squad{
+  vertical-align: bottom;
+  width: 310px;
+  height: 150px;
+  background: grey;
+  opacity: .5;
+  display: inline-block;
+  position: relative;
+  bottom: 310px;
+  margin-left: 10px;
+  border-radius: 10px;
+  margin-right: 8px;
 }
