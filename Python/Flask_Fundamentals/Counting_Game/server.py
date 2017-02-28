@@ -28,7 +28,7 @@ def guess():
             session.pop['number']
             session.pop['dragon']
             print "Congrats!"
-        return redirect('/', data=session['number'], dragon=session['dragon'])
+        return redirect('/', data=data, dragon=dragon)
 
 app.run(debug=True)
 

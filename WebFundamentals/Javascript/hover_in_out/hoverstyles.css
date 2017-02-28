@@ -14,29 +14,46 @@ p.attack{
   font-size: 30px;
   font-weight: bold;
 }
-.square{
+#square{
   vertical-align: bottom;
   width: 310px;
   height: 150px;
   background: silver;
   opacity: .75;
   display: inline-block;
-  position: relative;
-  bottom: 500px;
-  margin-left: 10px;
+  position: absolute;
   border-radius: 10px;
   margin-right: 8px;
 }
-.squad{
-  vertical-align: bottom;
-  width: 310px;
-  height: 150px;
-  background: grey;
-  opacity: .5;
-  display: inline-block;
-  position: relative;
-  bottom: 310px;
+.square1{
+  bottom: 500px;
   margin-left: 10px;
-  border-radius: 10px;
-  margin-right: 8px;
+}
+.square2{
+  bottom: 500px;
+  margin-left: 340px;
+}
+.square3{
+  bottom: 500px;
+  margin-left: 670px;
+}
+.square4{
+  bottom: 500px;
+  margin-left: 1000px;
+}
+.squad1{
+  bottom: 165px;
+  margin-left: 10px;
+}
+.squad2{
+  bottom: 165px;
+  margin-left: 340px;
+}
+.squad3{
+  bottom: 165px;
+  margin-left: 670px;
+}
+.squad4{
+  bottom: 165px;
+  margin-left: 1000px;
 }
