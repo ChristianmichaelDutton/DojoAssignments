@@ -1,6 +1,5 @@
 from django.shortcuts import render, redirect, HttpResponse
-import re
-from .models import Valid_Email
+from .models import Email, EmailManager
 
 
 def index(request):
@@ -8,16 +7,27 @@ def index(request):
 
 def success(request):
     data = {
-        "email_db":Valid_Email.objects.all()
+        "email":Email.objects.all()
     }
     return render (request,'validation/success.html',data)
 
+def email_id(request):
+    if request.method=='GET':
+        email_id = {
+            "email_id":Email.objects.delete(id)
+        }
+        return redirect('/')
+
 def validity(request):
-    if request.method=="POST":
-        request.session['email'] = request.POST['email']
-        check = request.session['email']
-        if re.match(r'^[a-zA-Z0-9.+_-]+@[a-zA-Z0-9._-]+\.[a-zA-Z]{,3}$',check,re.IGNORECASE):
-            Valid_Email.objects.create(email=request.POST['email'])
-            return redirect ('/success')
+    if request.method != 'POST':
+        return redirect('/')
+    else:
+        user = Email.objects.validate(request.POST)
+        if user[0] == True:
+            request.session["id"] = user[1].id
+            return redirect('/success')
         else:
-            return redirect ('/')
+            errors = {
+                "errors":user[1]
+            }
+            return redirect('/')

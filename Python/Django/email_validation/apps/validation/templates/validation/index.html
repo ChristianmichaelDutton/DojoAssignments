@@ -19,7 +19,7 @@
               <h1>Add an Email</h1>
               {% if validity is not True %}
                   <div class="invalid">
-                        <h3 class="invalid">Not a Valid Email!</h3>
+                        <h3 class="invalid">Here's your error: {{errors.user}}</h3>
                   </div>
               {% endif %}
               <form action='/show' method='post'>
