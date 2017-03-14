@@ -1,0 +1,12 @@
+h3{
+  color:white;
+}
+
+div.wrapper{
+  background-image: url("ahri.jpg");
+  height: 400px;
+}
+
+ul{
+  list-style: none;
+}

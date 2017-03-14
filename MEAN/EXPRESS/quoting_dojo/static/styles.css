@@ -1,0 +1,41 @@
+
+ul{
+  list-style: none;
+}
+div.wrapper{
+  height:800px;
+  width: 500px;
+  background-image: url('dragon.jpg');
+  background-repeat: no-repeat;
+  padding: 20px;
+}
+
+div.inside{
+  height:600px;
+  width: 400px;
+  margin: auto;
+  background-color: grey;
+  opacity: .75;
+  padding: 20px;
+}
+
+h2{
+  opacity: 1;
+}
+
+div.quotewrapper{
+  height:700px;
+  width: 800px;
+  background-image: url('village.jpg');
+  background-repeat: no-repeat;
+  padding: 40px;
+}
+
+div.quoteinside{
+  height:600px;
+  width: 700px;
+  margin: auto;
+  background-color: grey;
+  opacity: .75;
+  padding: 40px;
+}

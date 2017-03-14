@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <meta charset="utf-8">
+          <title>The Dragon's Den</title>
+          <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+          <div class="wrapper">
+              <div class="inside">
+                  <h2>Welcome to the Dragon's Den</h2>
+                  <form class="form" action="/quotes" method="post">
+                        <ul>
+                            <li><h2>Name:</h2></li>
+                            <li><input type="text" name="name" value=""></li>
+                            <li><h2>Quote:</h2></li>
+                            <li><input type="text" name="quote" rows="8" cols="40" value=""></li>
+                        </ul>
+                        <input type="submit" name="submit" value="Quote me!">
+                  </form>
+                  <form class="form1" action="/quotes" method="post">
+                        <input type="submit" name="submit2" value="Go to Quotes">
+                  </form>
+              </div>
+          </div>
+    </body>
+</html>
