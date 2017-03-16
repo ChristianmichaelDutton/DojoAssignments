@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit</title>
+</head>
+<body>
+  <h1>Edit #<%= dragon.name %>!</h1>
+  <form action="/<%= dragon.id %>" method='post'>
+    Name: <input type="text" name="name" value="<%= dragon.name %>">
+    <input type="submit" value="Edit character!">
+  </form>
+  <a href="/">Home</a>
+</body>
+</html>

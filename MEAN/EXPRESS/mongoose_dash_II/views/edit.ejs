@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Edit Your Character!</title>
+</head>
+<body>
+      <h1>Edit #<%= dragon.name %>!</h1>
+      <form action="/<%= dragon.id %>" method='post'>
+            Name: <input type="text" name="name" value="<%= dragon.name %>">
+            Class: <input type="text" name="class" value="<%= dragon.class %>">
+            Race: <input type="text" name="color" value="<%= dragon.race %>">
+            <input type="submit" value="Edit Adventurer!">
+      </form>
+      <a href="/">Home</a>
+</body>
+</html>

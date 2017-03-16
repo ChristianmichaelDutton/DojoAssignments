@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+          <meta charset="utf-8">
+          <title>The Guild</title>
+          <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="header">
+                <div class="texture">
+                      <h1 class="title">Welcome to the Adventurer's Guild!</h1>
+                </div>
+            </div>
+            <div class="pic">
+            </div>
+            <div class="right">
+                <h3>Welcome to the Adventurer's Guild where you can join for a mere 50
+                gold crowns, you will receive training in the sorcerous arts or the path of arms,
+              be allowed to accept official quests on behalf of the Crown, or just grab a tankard
+            to trade your tales of glory for the bards to pen your name in history!</h3>
+                <h3>Welcome Friend!</h3>
+            <form class="form" action="/new" method="get">
+                  <input class="create" type="submit" name="submit" value="Create Character">
+            </form>
+            </div>
+            <div class="display">
+                <h3>The Current Guild Roster</h3>
+                <% for (i in dragon) { %>
+                  <p>Name: <a href="/<%= dragon[i]._id %>"><%= dragon[i].name %></a>
+                      <a href="/<%= dragon[i]._id %>/edit/">Edit Character</a>
+                      <form action="/<%= dragon[i]._id %>/delete/" method='post'>
+                          <input type="submit" value="Delete">
+                      </form>
+                  </p>
+                <% } %>
+            </div>
+        </div>
+    </body>
+</html>
