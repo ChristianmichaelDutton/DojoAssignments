@@ -10,13 +10,15 @@ function gcd(num1, num2) {
 
 
 function subSet(arr){
-  if (arr.length === 1) return [arr];
-  else {
+  if (arr.length === 1){
+    return [arr];
+  } else {
   	subarr = subSet(arr.slice(1));
+    console.log(subarr);
   	return subarr.concat(subarr.map(e => e.concat(arr[0])), arr[0]);
   }
 }
-// console.log(subSet('abc'));
+console.log(subSet('abc'));
 
 
 function risingSquares(n){
@@ -32,4 +34,4 @@ function risingSquares(n){
   arr.unshift(n*n);
   return risingSquares(n-1)
 }
-console.log(risingSquares(3))
+// console.log(risingSquares(3))

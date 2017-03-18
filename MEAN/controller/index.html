@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+    <head>
+        <meta charset="UTF-8">
+        <title>Document</title>
+        <link rel="stylesheet" href="styles.css">
+        <script src="bower_components/angular/angular.js" charset="utf-8"></script>
+        <script src='javascript.js'></script>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div ng-controller='monstersController'>
+                <div class="left">
+                    <h2><u>Add Monster</u></h2>
+                    <form ng-submit="addMonster()">
+                        <input type="text" ng-model='monster'>
+                        <input type="submit" value="add">
+                    </form>
+                    <p ng-if="monster">
+                        You are currently typing: {{monster}}
+                    </p>
+                </div>
+                <div class="right">
+                    <h2><u>Monster</u></h2>
+                    <input placeholder="filter..." type="text" ng-model="monsterFilter">
+                    <div ng-repeat="monster in monsters | filter:monsterFilter track by $index">
+                        <p>{{monster}}</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

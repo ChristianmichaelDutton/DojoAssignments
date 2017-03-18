@@ -1,0 +1,12 @@
+<html ng-app=''>
+<head>
+      <script src="bower_components/angular/angular.js"></script>
+</head>
+<body>
+  <div ng-init="adventurers=['Cougarwrath','Staghos','Myraeth','Ferrowclaw','Dama','Ammeriti','Lunavesca']">
+    <ul>
+        <h3><li ng-repeat="adventurer in adventurers">{{adventurer}}</li></h3>
+    </ul>
+  </div>
+</body>
+</html>

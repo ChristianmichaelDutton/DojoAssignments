@@ -1,0 +1,29 @@
+<html ng-app=''>
+<head>
+    <script src="bower_components/angular/angular.js"></script>
+</head>
+<body>
+  <div ng-init="adventurers=[
+        {name: 'Cougarwrath',
+        level: '7th level',
+         class: 'rogue',
+        weapon: 'dragonshot'},
+        {name: 'Ferrowclaw',
+        level: '7th level',
+         class: 'sorcerer',
+        weapon: 'spell'},
+        {name: 'Dama',
+        level: '8th level',
+         class: 'elementalist',
+        weapon: 'sheedhath'},
+        {name: 'Ammeriti',
+        level: '5th level',
+         class: 'barbarian',
+        weapon: 'nagin sword'}]">
+    <ul>
+        <li ng-repeat="adventurer in adventurers">{{adventurer.name}} is a {{adventurer.level}} {{adventurer.class}} who
+        wields a {{adventurer.weapon}}!</li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<html ng-app='app'>
+<head>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js'></script>
+    <script src='javascript.js'></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <div id='wrapper'>
+      <div class="tan">
+      </div>
+      <h1>Welcome to the Adventurer's Guild!</h1>
+  </div>
+  <div id="grey" ng-controller='adventurersController'>
+      <form>
+         Name: <input type='text' ng-model='newAdventurer.name'>
+         Level: <input type='text' ng-model='newAdventurer.level'>
+         Race: <input type='text' ng-model='newAdventurer.race'>
+         Class: <input type='text' ng-model='newAdventurer.class'>
+         Weapon: <input type='text' ng-model='newAdventurer.weapon'>
+         <input type='submit' value='add new adventurer' ng-click='addAdventurer()'>
+      </form>
+      <ul>
+          <li ng-repeat="adventurer in adventurers">{{adventurer.name}} is a {{adventurer.level}}
+            {{adventurer.race}}{{adventurer.class}} and for a weapon uses {{adventurer.weapon}}.</li>
+      </ul>
+  </div>
+</body>
+</html>
