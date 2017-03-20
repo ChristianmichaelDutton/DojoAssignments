@@ -1,0 +1,21 @@
+.class {
+border-collapse: collapse;
+}
+
+.class th {
+border-bottom: 1px solid;
+}
+.class td, .class th {
+border-left: 1px solid;
+padding: 5px 10px;
+}
+.class td:first-child, .class th:first-child {
+border-left: none;
+}
+
+.sortorder:after {
+content: '\25b2';   // BLACK UP-POINTING TRIANGLE
+}
+.sortorder.reverse:after {
+content: '\25bc';   // BLACK DOWN-POINTING TRIANGLE
+}

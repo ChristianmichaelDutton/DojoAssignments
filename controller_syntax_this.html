@@ -18,14 +18,14 @@
     </script>
 </head>
 <body>
-  <div ng-controller='studentsController as studentsCtrl'>
+  <div ng-controller='studentsController as pinkunicorns'>
     <ul>
-        <li ng-repeat="student in studentsCtrl.students">{{ student.name }}, {{ student.age }}</li>
+        <li ng-repeat="student in pinkunicorns.students">{{ student.name }}, {{ student.age }}</li>
     </ul>
     <form>
-       Name: <input type='text' ng-model='studentsCtrl.newStudent.name'>
-       Age: <input type='text' ng-model='studentsCtrl.newStudent.age'>
-       <input type='submit' value='add new student' ng-click='studentsCtrl.addStudent()'>
+       Name: <input type='text' ng-model='pinkunicorns.newStudent.name'>
+       Age: <input type='text' ng-model='pinkunicorns.newStudent.age'>
+       <input type='submit' value='add new student' ng-click='pinkunicorns.addStudent()'>
     </form>
   </div>
 </body>

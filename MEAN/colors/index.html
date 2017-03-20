@@ -1,0 +1,36 @@
+<html ng-app='myApp'>
+    <head>
+        <title>Colors!</title>
+        <script src='bower_components/angular/angular.js'></script>
+        <script src='javascript.js'></script>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+      <div ng-controller="colorsController">
+          <h1>Look at all the pretty colors!</h1>
+          <table class="crayola">
+            <tr>
+              <th>
+                <button ng-click="sortBy('name')">Name</button>
+                <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
+              </th>
+              <th>
+                <button ng-click="sortBy('hex')">Hex</button>
+                <span class="sortorder" ng-show="propertyName === 'hex'" ng-class="{reverse: reverse}"></span>
+              </th>
+              <th>Color</th>
+              <th>
+                <button ng-click="sortBy('RGB')">RGB</button>
+                <span class="sortorder" ng-show="propertyName === 'rgb'" ng-class="{reverse: reverse}"></span>
+              </th>
+            </tr>
+            <tr ng-repeat="color in colors | orderBy:propertyName:reverse">
+              <td><a href="" ng-click="coloßr in colors | filter:colorFilter track by $index">{{color.name}}</a></td>
+              <td><a href="">{{color.hex}}</a></td>
+              <td style="background-color: {{color.hex}};"></td>
+              <td><a href="">{{color.rgb}}</a></td>
+            </tr>
+          </table>
+      </div>
+    </body>
+</html>
