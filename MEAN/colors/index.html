@@ -8,6 +8,13 @@
     <body>
       <div ng-controller="colorsController">
           <h1>Look at all the pretty colors!</h1>
+          <label>Color:
+          <span  class="nullable">
+              <select ng-model="myColor" ng-options="color.name for color in colors">
+                  <option value="">-- choose color --</option>
+              </select>
+              <p>{{color.name}}, {{color.hex}}, {{color.hex}}</p>
+          </span></label><br/>
           <table class="crayola">
             <tr>
               <th>
@@ -25,10 +32,10 @@
               </th>
             </tr>
             <tr ng-repeat="color in colors | orderBy:propertyName:reverse">
-              <td><a href="" ng-click="coloßr in colors | filter:colorFilter track by $index">{{color.name}}</a></td>
-              <td><a href="">{{color.hex}}</a></td>
+              <td>{{color.name}}</td>
+              <td>{{color.hex}}</td>
               <td style="background-color: {{color.hex}};"></td>
-              <td><a href="">{{color.rgb}}</a></td>
+              <td>{{color.rgb}}</td>
             </tr>
           </table>
       </div>

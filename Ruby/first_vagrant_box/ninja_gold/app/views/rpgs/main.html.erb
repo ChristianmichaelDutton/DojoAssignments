@@ -1,0 +1,49 @@
+<div class="container">
+  <div class="ninja">
+        <h1>Ninja Gold!!!</h1>
+        <h2>Your gp: <%= @gold %></h2>
+  </div>
+  <div class="row">
+      <div class="col-md-3">
+        <h3>Dungeon</h3>
+        <h5>Earns 1d8+6 gp</h5>
+        <form class="dungeon" action="/generate" method="post">
+              <!--The form determines the method (post) and action (/generate) in the routes file  -->
+              <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+              <!--You need the authenticity_token to access  -->
+              <input type="hidden" name="building" value="dungeon">​
+              <!--You need this hidden line for params on the controller. The params type is name and the params value is value -->
+              <input class="btn btn-primary"type="submit" name="submit" value="Earn GP!"></input>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <h3>Wilderness</h3>
+        <h5>Earns 1d20 gp</h5>
+        <form class="wilderness" action="/generate" method="post">
+              <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+              <input type="hidden" name="building" value="wilderness">
+              <input class="btn btn-primary"type="submit" name="submit" value="Earn GP!"></input>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <h3>Guild</h3>
+        <h5>Earns 1d4+1 gp</h5>
+        <form class="guild" action="/generate" method="post">
+              <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+              <input type="hidden" name="building" value="guild">
+              <input class="btn btn-primary"type="submit" name="submit" value="Earn GP!"></input>
+        </form>
+      </div>
+      <div class="col-md-3">
+        <h3>Tavern</h3>
+        <h5>Earns or takes 5d10 gp</h5>
+        <form class="tavern" action="/generate" method="post">
+              <input name="authenticity_token" value="<%= form_authenticity_token %>" type="hidden">
+              <input type="hidden" name="building" value="tavern">
+              <input class="btn btn-primary"type="submit" name="submit" value="Earn GP!"></input>
+        </form>
+      </div>
+      <h3>Activity Log</h3>
+      <textarea rows='6' cols='100'><%= @adventure %></textarea>
+      </div>
+</div>

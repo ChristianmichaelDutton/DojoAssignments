@@ -1,0 +1,27 @@
+<div ng-controller="FactionsController">
+   <form>
+      <!--ng-init ensures that the dropdown will show the first value by default-->
+      <select ng-model="newAssoc.adventurerIdx" ng-init="newAssoc.adventurerIdx = 0">
+         <!--Each option displays the adventurer's name, but has a value of that adventurer's index-->
+         <option ng-repeat="adventurer in adventurers" value={{$index}} ng-bind="adventurer.name"></option>
+      </select>
+      <select ng-model="newAssoc.roster" ng-init="newAssoc.roster = rosters[0].name">
+         <option ng-repeat="roster in rosters" value={{roster.name}} ng-bind="roster.name"></option>
+      </select>
+      <!--When the button is clicked, run the addAdventurerToRoster function-->
+      <button type="submit" ng-click="addAdventurerToRoster()">Assign Adventurer To Roster</button>
+   </form>
+   <table border="1">
+      <tr>
+         <td>Name</td>
+         <td>Roster</td>
+         <td></td>
+      </tr>
+      <tr ng-repeat="adventurer in adventurers">
+         <td ng-bind="adventurer.name"></td>
+         <td ng-bind="adventurer.roster"></td>
+         <!--When the button is clicked, run the removeAdventurerFromRoster function-->
+         <td><button ng-click="removeAdventurerFromRoster($index)">Clear Assignment</button></td>
+      </tr>
+   </table>
+</div>

@@ -1,0 +1,18 @@
+<div ng-controller="RostersController">
+   <form>
+      Name <input type="text" ng-model="newRoster.name"/>
+      <!--When the button is clicked, run the addRoster function-->
+      <button type="submit" ng-click="addRoster()">Add New Roster</button>
+   </form>
+   <table border="1">
+      <tr>
+         <td>Roster Name</td>
+         <td>Actions</td>
+      </tr>
+      <tr ng-repeat="roster in rosters">
+         <td ng-bind="roster.name"></td>
+         <!--When the button is clicked, run the removeRoster function-->
+         <td><button ng-click="removeRoster($index)">Remove Roster</button></td>
+      </tr>
+   </table>
+</div>

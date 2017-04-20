@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html ng-app="myApp">
+   <head>
+        <meta charset="utf-8">
+        <title>Welcome to the Guild!</title>
+        <script src = 'angular/angular.js'></script>
+        <script src = 'angular-route/angular-route.js'></script>
+        <script type="text/javascript" src="./js/factories/adventurerFactory.js"></script>
+        <script type="text/javascript" src="./js/factories/rosterFactory.js"></script>
+        <script type="text/javascript" src="./js/controllers/adventurersController.js"></script>
+        <script type="text/javascript" src="./js/controllers/rostersController.js"></script>
+        <script type="text/javascript" src="./js/controllers/factionsController.js"></script>
+        <script type="text/javascript" src="./js/config/routes.js"></script>
+   </head>
+   <body>
+        <a href="#!/adventurers">Adventurers</a> <a href="#!/rosters">Rosters</a> <a href="#!/factions">Factions</a>
+        <div ng-view=""></div>
+   </body>
+</html>

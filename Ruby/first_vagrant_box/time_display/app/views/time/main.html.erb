@@ -1,0 +1,43 @@
+<style>
+div.elf{
+  height: 1000px;
+  background-image: url("elf.jpg");
+  background-repeat: no-repeat;
+  padding-top: 200px;
+}
+div.dragon{
+  height: 100px;
+  width: 400px;
+  display: block;
+  margin-left:200px;
+  margin-right: 200px;
+  background-color: white;
+  border: 3px solid grey;
+  border-radius: 15px;
+}
+div.snake{
+  height: 200px;
+  width: 400px;
+  display: block;
+  margin-left:200px;
+  margin-right: 200px;
+  background-color: white;
+  border: 3px solid grey;
+  border-radius: 15px;
+  margin-top: 25px;
+}
+h2{
+  text-align: center;
+}
+
+</style>
+
+<div class="elf">
+    <div class="dragon">
+        <h1>The current time and date is</h1>
+    </div>
+    <div class="snake">
+        <h2><%= @time.strftime("%l:%M%P") %></h2>
+        <h2><%= @time.strftime("%D") %></h2>
+    </div>
+</div>

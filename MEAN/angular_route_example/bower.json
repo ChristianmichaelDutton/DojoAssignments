@@ -1,0 +1,17 @@
+{
+  "name": "angular_route_example",
+  "homepage": "https://github.com/ChristianmichaelDutton/DojoAssignments",
+  "authors": [
+    "Christianmichael Dutton <christianmichael_dutton@yahoo.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

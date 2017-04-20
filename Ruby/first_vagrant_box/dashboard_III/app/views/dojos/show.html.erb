@@ -1,0 +1,12 @@
+<h1><%= @dojo.branch %></h1>
+
+<p>Addres: <%= @dojo.street %></p>
+<p>City: <%= @dojo.city %> State: <%= @dojo.state %></p>
+
+<%= link_to "Home", root_path %> |
+<br>
+<form class="" action="/dojos/<%= @dojo.id =%>" method="post">
+<input type="hidden" name="_method" value="delete">
+<input type="hidden" name="authenticity_token" value="<%=form_authenticity_token=%>">
+<input type="submit" name="" value="Delete">
+</form>

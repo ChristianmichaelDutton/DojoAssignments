@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+    <meta charset="utf-8">
+    <title>Main</title>
+    <script src="angular/angular.js"></script>
+    <script src="angular-route/angular-route.js"></script>
+    <script src="client/js/controllers/meetups_controller.js"></script>
+  </head>
+  <body>
+      <div ng-controller="meetupsController">
+          <h1>There are {{meetupsCount}} meetups</h1>
+      </div>
+  </body>
+</html>

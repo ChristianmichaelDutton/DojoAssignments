@@ -1,0 +1,19 @@
+
+<!--Communicate to the controller-->
+<div ng-controller = 'friendsController'>
+    <form ng-submit='createFriend()'>
+        <h3>First Name:</h3>
+        <input type="text" name="" value="" ng-model="newFriend.first_name">
+        <h3>Last Name:</h3>
+        <input type="text" name="" value=""ng-model="newFriend.last_name">
+        <input type="submit" name="" value="Submit">
+        <hr>
+    </form>
+    <div ng-repeat="xguy in friends">
+        First Name: <span ng-bind='xguy.first_name'></span><br>
+        Second Name: <span ng-bind='xguy.last_name'></span><br>
+        <a href="/friend/{{xguy._id}}">Update</a><br>
+        <a href="/friend/{{xguy._id}}">Delete</a><br>
+        <hr>
+    </div>
+</div>

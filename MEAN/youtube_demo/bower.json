@@ -1,0 +1,20 @@
+{
+  "name": "youtube_demo",
+  "homepage": "https://github.com/ChristianmichaelDutton/DojoAssignments",
+  "authors": [
+    "Christianmichael Dutton <christianmichael_dutton@yahoo.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}

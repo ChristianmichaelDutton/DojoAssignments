@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html ng-app>
+  <head>
+      <meta charset="utf-8">
+      <title>Tiamat's Survey Page</title>
+      <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="../bootstrap/dist/css/bootstrap-theme.min.css">
+      <script src="../bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+      <script src="angular/angular.js" charset="utf-8"></script>
+      <script src="angular-route/angular-route.js" charset="utf-8"></script>
+      <script src="../server/controllers/usersController.js" charset="utf-8"></script>
+      <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <div class="createwrapper">
+      <h4>Pen your question in Tiamat's Book of Souls if you dare!</h4>
+      <hr>
+          <a href="">Back to Tiamat's Den</a>
+          <br><br>
+      <div class="container">
+          <table class="table">
+                <input type="text" size="100" name="" value="Enter your question...">
+                <thead class='c'>
+                    <tr>
+                      <th>Options</th>
+                    </tr>
+                    <tr>
+                      <td>Option1:<input class="c" type="text" name="" value=""></td>
+                    </tr>
+                    <tr>
+                      <td>Option2:<input class="c"type="text" name="" value=""></td>
+                    </tr>
+                    <tr>
+                      <td>Option3:<input class="c"type="text" name="" value=""></td>
+                    </tr>
+                    <tr>
+                      <td>Option4:<input class="c"type="text" name="" value=""></td>
+                    </tr>
+                </thead>
+          </table>
+          <form class="" action="/create" method="post">
+              <button class="btn btn-primary" type="submit" name="submit">Pen your Question!</button>
+          </form>
+      </div>
+    </div>
+  </body>
+</html>

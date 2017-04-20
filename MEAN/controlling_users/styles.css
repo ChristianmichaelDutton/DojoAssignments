@@ -1,0 +1,61 @@
+div#wrapper {
+    background-image: url('adventurer.jpg');
+    border: 20px solid black;
+    box-shadow: 5px 5px 10px grey;
+    border-radius: 20px;
+    background-repeat: no-repeat;
+    height: 550px;
+    width: 970px;
+}
+div.tan {
+    width: 700px;
+    height: 100px;
+    background-color: grey;
+    border: 5px solid blue;
+    border-radius: 15px;
+    position: relative;
+    top: 50px;
+    opacity: .5;
+    left: 135px;
+    vertical-align: top;
+    display: block;
+}
+h1 {
+    position: relative;
+    text-align: center;
+    top: -40px;
+    color: white;
+    font-family: fantasy;
+}
+input{
+  display: block;
+  font-size: 150%;
+  font-weight: bold;
+}
+.guilder {
+border-collapse: collapse;
+}
+.guilder th {
+border-bottom: 1px solid;
+}
+.guilder td, .guilder th {
+border-left: 1px solid;
+padding: 5px 10px;
+}
+.guilder td:first-child, .guilder th:first-child {
+border-left: none;
+}
+.sortorder:after {
+content: '\25b2';   // BLACK UP-POINTING TRIANGLE
+}
+.sortorder.reverse:after {
+content: '\25bc';   // BLACK DOWN-POINTING TRIANGLE
+}
+div.newguilder{
+  display: inline-block;
+  margin: 5px;
+}
+div.tableguilder{
+  display: inline-block;
+  border: 3px solid black;
+}

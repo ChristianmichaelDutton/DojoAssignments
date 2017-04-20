@@ -1,0 +1,62 @@
+<html ng-app='app'>
+<head>
+    <title>Adventurers' Guild</title>
+    <script src='https://ajax.googleapis.com/ajax/libs/angularjs/1.3.5/angular.min.js'></script>
+    <script src='javascript.js'></script>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+<body>
+  <div id='wrapper'>
+      <div class="tan">
+      </div>
+      <h1>Welcome to the Adventurer's Guild!</h1>
+  </div>
+  <div id="grey" ng-controller='adventurersController'>
+      <div class="newguilder">
+            <form>
+               Name: <input type='text' ng-model='newAdventurer.name'>
+               Level: <input type='text' ng-model='newAdventurer.level'>
+               Race: <input type='text' ng-model='newAdventurer.race'>
+               Class: <input type='text' ng-model='newAdventurer.class'>
+               Weapon: <input type='text' ng-model='newAdventurer.weapon'>
+               <input type='submit' value='add new adventurer' ng-click='addAdventurer()'>
+            </form>
+      </div>
+      <div class="tableguilder">
+          <table class="guilder">
+              <tr>
+                  <th>
+                      <button ng-click="sortBy('name')">Name</button>
+                      <span class="sortorder" ng-show="propertyName === 'name'" ng-class="{reverse: reverse}"></span>
+                  </th>
+                  <th>
+                      <button ng-click="sortBy('level')">Level</button>
+                      <span class="sortorder" ng-show="propertyName === 'level'" ng-class="{reverse: reverse}"></span>
+                  </th>
+                  <th>
+                      <button ng-click="sortBy('race')">Race</button>
+                      <span class="sortorder" ng-show="propertyName === 'race'" ng-class="{reverse: reverse}"></span>
+                  </th>
+                  <th>
+                      <button ng-click="sortBy('class')">Class</button>
+                      <span class="sortorder" ng-show="propertyName === 'class'" ng-class="{reverse: reverse}"></span>
+                  </th>
+                  <th>
+                      <button ng-click="sortBy('weapon')">Weapon</button>
+                      <span class="sortorder" ng-show="propertyName === 'weapon'" ng-class="{reverse: reverse}"></span>
+                  </th>
+                  <th>Action</th>
+            </tr>
+            <tr ng-repeat="adventurer in adventurers | orderBy:propertyName:reverse">
+                  <td>{{adventurer.name}}</td>
+                  <td>{{adventurer.level}}</td>
+                  <td>{{adventurer.race}}</td>
+                  <td>{{adventurer.class}}</td>
+                  <td>{{adventurer.weapon}}</td>
+                  <td><button ng-click='deleteAdventurer(adventurer)'>Delete</button></td>
+            </tr>
+          </table>
+      </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!--STEP 7. Create a simple html page, link up bootstrap, jquery, angular,
+angular-route and styles.css files-->
+
+<!DOCTYPE html>
+<html ng-app='myApp'>
+  <head>
+      <meta charset="utf-8">
+      <title>Tiamat's Survey Page</title>
+      <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.min.css">
+      <link rel="stylesheet" href="bootstrap/dist/css/bootstrap-theme.min.css">
+      <script src="bootstrap/dist/js/bootstrap.min.js" charset="utf-8"></script>
+      <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+      <script src="angular/angular.js" charset="utf-8"></script>
+      <script src="angular-route/angular-route.js" charset="utf-8"></script>
+      <script src="controllers/usersController.js" charset="utf-8"></script>
+      <link rel="stylesheet" href="assets/css/styles.css">
+  </head>
+  <body>
+    <!--STEP 8. Test Angular to see if it's working. Put in ng-app in the html tag,
+  write in an input with ng-model = 'test' and then set an h1 tag to {{test}}  -->
+    <!-- <input ng-model='test'><h1>{{test}}</h1> -->
+    <div class="wrapper">
+      <h1>Hail to Tiamat, the Queen of the Dragons!</h1>
+      <h1>Welcome to Tiamat's Survey</h1>
+      <hr>
+      <div class="container" ng-controller="usersController">
+          <h4>Enter your name traveler, but be ye warned! Tiamat suffers no fools or interlopers!</h4>
+          <table class="table">
+                <thead>
+                    <tr>
+                      <th class='i'>Name</th>
+                    </tr>
+                    <tr>
+                      <td><input class = "form-control" ng-model="user.name"></td>
+                      <td><button class ='btn btn-primary' ng-click='addUser()'>Enter the Den</button></td>
+                    </tr>
+                </thead>
+          </table>
+      </div>
+    </div>
+  </body>
+</html>

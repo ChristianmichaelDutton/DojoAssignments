@@ -1,0 +1,13 @@
+<!--Communicate to the controller-->
+<div ng-controller = 'friendsController'>
+    <form ng-submit='deleteFriend()'>
+        <input type="submit" name="" value="Delete">
+        <hr>
+    </form>
+    <div ng-repeat="xguy in friends">
+        First Name: <span ng-bind='xguy.first_name'></span><br>
+        Last Name: <span ng-bind='xguy.last_name'></span><br>
+        birthday: <span ng-bind='xguy.birthday'></span><br>
+        <hr>
+    </div>
+</div>

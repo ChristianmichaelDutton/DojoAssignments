@@ -1,0 +1,18 @@
+<div ng-controller="AdventurersController">
+   <form>
+      Name <input type="text" ng-model="newAdventurer.name"/>
+      <!--When the button is clicked, run the addAdventurer function-->
+      <button type="submit" ng-click="addAdventurer()">Add Adventurer</button>
+   </form>
+   <table border="1">
+      <tr>
+         <td>Name</td>
+         <td>Actions</td>
+      </tr>
+      <tr ng-repeat="adventurer in adventurers">
+         <td ng-bind="adventurer.name"></td>
+         <!--When the button is clicked, run the removeAdventurer function-->
+         <td><button ng-click="removeAdventurer($index)">Remove Adventurer</button></td>
+      </tr>
+   </table>
+</div>

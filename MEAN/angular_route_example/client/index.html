@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html ng-app='app'>
+  <head>
+    <meta charset="utf-8">
+    <title>Main</title>
+    <script src="angular/angular.js" charset="utf-8"></script>
+    <script src="angular-route/angular-route.js" charset="utf-8"></script>
+    <script>
+        var app = angular.module('app',['ngRoute']);
+        var cool = app.config(function($routeProvider){
+          $routeProvider
+          .when('/',{
+              templateUrl: 'partials/partial1.html'
+          })
+          .when('/partial2',{
+              templateUrl: 'partials/partial2.html'
+          })
+          .when('/partial3',{
+              templateUrl: 'partials/partial3.html'
+          })
+          .otherwise({
+            redirectTo: '/'
+          });
+        });
+        var fun = app.config(function($routeProvider){
+          $routeProvider
+          .when('/partial4',{
+              templateUrl: 'partials/partial4.html'
+          })
+          .when('/partial5',{
+              templateUrl: 'partials/partial5.html'
+          })
+          .when('/partial6',{
+              templateUrl: 'partials/partial6.html'
+          })
+          .otherwise({
+            redirectTo: '/'
+          });
+        });
+    </script>
+  </head>
+  <body>
+      <div ng-view ='cool'></div>
+      <h1>Hello</h1>
+      <a href="#!">Tavern|</a>
+      <a href="#!/partial2">Adventurers' Shoppe|</a>
+      <a href="#!/partial3">Spells and Hexes|</a>
+      <a href="#!/partial4">Ye Magic Shoppe|</a>
+      <a href="#!/partial5">The Temple of Healing|</a>
+      <a href="#!/partial6">Teleportation Circle</a>
+  </body>
+</html>

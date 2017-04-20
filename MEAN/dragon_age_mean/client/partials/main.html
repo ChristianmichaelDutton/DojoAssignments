@@ -1,0 +1,22 @@
+
+<!--Communicate to the controller-->
+<div ng-controller = 'dragonsController'>
+    <form ng-submit='createDragon()'>
+        <h3>Name:</h3>
+        <input type="text" name="" value="" ng-model="newDragon.name">
+        <h3>Race:</h3>
+        <input type="text" name="" value=""ng-model="newDragon.race">
+        <h3>Class:</h3>
+        <input type="text" name="" value=""ng-model="newDragon.class">
+        <input type="submit" name="" value="Submit">
+        <hr>
+    </form>
+    <div ng-repeat="dragon in dragons">
+        Name: <span ng-bind='dragon.name'></span><br>
+        Race: <span ng-bind='dragon.race'></span><br>
+        Class: <span ng-bind='dragon.class'></span><br>
+        <a href="/dragon/{{dragon._id}}">Update</a><br>
+        <a href="/dragon/{{dragon._id}}">Delete</a><br>
+        <hr>
+    </div>
+</div>

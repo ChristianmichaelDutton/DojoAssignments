@@ -1,0 +1,63 @@
+div.wrapper {
+    background-image: url('../images/tiamat.jpg');
+    background-repeat: no-repeat;
+    padding: 20px;
+    height: 1000px;
+    width:  1600px;
+}
+
+h1, h4, th.i {
+  color:white;
+}
+
+tr:hover{
+  background-color: #B8BBC0
+}
+
+tr.s{
+  color: white;
+}
+
+div.surveywrapper{
+  background-image: url('../images/tiamat2.jpg');
+  background-repeat: no-repeat;
+  padding: 40px;
+  height: 1400px;
+  width: 1200px;
+}
+
+div.links{
+  width: 100%;
+  display: inline;
+}
+
+div.questionwrapper{
+  background-image: url('../images/den.jpg');
+  background-repeat: no-repeat;
+  padding: 40px;
+  height: 1400px;
+  width: 1200px;
+}
+
+thead.q{
+  color:blue;
+}
+
+div.createwrapper{
+  background-image: url('../images/book.jpg');
+  background-repeat: no-repeat;
+  padding: 40px;
+  height: 1000px;
+  width: 1000px;
+}
+
+input.c{
+  margin-left: 25px;
+  border: 3px solid white;
+  box-shadow: 3px 3px 5px grey;
+}
+
+thead.c{
+  color:blue;
+  font-weight: bold;
+}
